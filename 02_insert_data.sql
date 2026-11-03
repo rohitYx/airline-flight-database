@@ -1,0 +1,102 @@
+-- Step 2: Insert sample data
+-- Airline Flight Database | Rohit Yadav | UID: 202501100100218
+
+-- AIRLINE
+INSERT INTO AIRLINE VALUES
+(1, 'IndiGo', 'India', '1800102345');
+INSERT INTO AIRLINE VALUES
+(2, 'Air India', 'India', '1800227722');
+INSERT INTO AIRLINE VALUES
+(3, 'SpiceJet', 'India', '1800180300');
+INSERT INTO AIRLINE VALUES
+(4, 'Akasa Air', 'India', '1800209100');
+INSERT INTO AIRLINE VALUES
+(5, 'Air India Express', 'India', '1800126300');
+
+-- AIRCRAFT
+INSERT INTO AIRCRAFT VALUES
+(1, 'A320neo', 186, 'Airbus');
+INSERT INTO AIRCRAFT VALUES
+(2, 'Boeing 737-800', 189, 'Boeing');
+INSERT INTO AIRCRAFT VALUES
+(3, 'ATR 72-600', 78, 'ATR');
+INSERT INTO AIRCRAFT VALUES
+(4, 'A321', 222, 'Airbus');
+INSERT INTO AIRCRAFT VALUES
+(5, 'Boeing 787-8', 256, 'Boeing');
+
+-- AIRPORT
+INSERT INTO AIRPORT VALUES
+(1, 'Indira Gandhi International Airport', 'IN', 'Delhi');
+INSERT INTO AIRPORT VALUES
+(2, 'Chhatrapati Shivaji Maharaj International Airport', 'IN', 'Mumbai');
+INSERT INTO AIRPORT VALUES
+(3, 'Kempegowda International Airport', 'IN', 'Bengaluru');
+INSERT INTO AIRPORT VALUES
+(4, 'Chennai International Airport', 'IN', 'Chennai');
+INSERT INTO AIRPORT VALUES
+(5, 'Netaji Subhas Chandra Bose International Airport', 'IN', 'Kolkata');
+
+-- FLIGHT
+INSERT INTO FLIGHT VALUES
+(1, '6E-201', 'On Time', 1, 1, 1, 2);
+INSERT INTO FLIGHT VALUES
+(2, 'AI-505', 'Delayed', 2, 4, 2, 3);
+INSERT INTO FLIGHT VALUES
+(3, 'SG-812', 'Scheduled', 3, 2, 1, 5);
+INSERT INTO FLIGHT VALUES
+(4, '6E-7125', 'Scheduled', 1, 3, 3, 4);
+INSERT INTO FLIGHT VALUES
+(5, 'IX-1148', 'Cancelled', 5, 2, 4, 2);
+
+-- FLIGHT_SCHEDULE
+INSERT INTO FLIGHT_SCHEDULE VALUES
+(1, DATE '2026-11-10', '06:00', '08:10', 130, 1);
+INSERT INTO FLIGHT_SCHEDULE VALUES
+(2, DATE '2026-11-11', '09:30', '11:15', 105, 2);
+INSERT INTO FLIGHT_SCHEDULE VALUES
+(3, DATE '2026-11-12', '14:00', '16:15', 135, 3);
+INSERT INTO FLIGHT_SCHEDULE VALUES
+(4, DATE '2026-11-13', '18:45', '19:45', 60, 4);
+INSERT INTO FLIGHT_SCHEDULE VALUES
+(5, DATE '2026-11-14', '11:20', '13:30', 130, 5);
+
+-- PASSENGER
+INSERT INTO PASSENGER VALUES
+(1, 'Rohit Yadav', 'rohit.yadav@email.com', '9876543210');
+INSERT INTO PASSENGER VALUES
+(2, 'Aman Verma', 'aman.verma@email.com', '9876543211');
+INSERT INTO PASSENGER VALUES
+(3, 'Priya Sharma', 'priya.sharma@email.com', '9876543212');
+INSERT INTO PASSENGER VALUES
+(4, 'Neha Singh', 'neha.singh@email.com', '9876543213');
+INSERT INTO PASSENGER VALUES
+(5, 'Rahul Gupta', 'rahul.gupta@email.com', '9876543214');
+
+-- BOOKING
+INSERT INTO BOOKING VALUES
+(1, DATE '2026-10-20', 'Confirmed', 5500, 1);
+INSERT INTO BOOKING VALUES
+(2, DATE '2026-10-22', 'Confirmed', 9600, 2);
+INSERT INTO BOOKING VALUES
+(3, DATE '2026-10-25', 'Confirmed', 6200, 3);
+INSERT INTO BOOKING VALUES
+(4, DATE '2026-10-28', 'Pending', 3100, 4);
+INSERT INTO BOOKING VALUES
+(5, DATE '2026-10-30', 'Cancelled', 4500, 5);
+
+-- TICKET
+INSERT INTO TICKET VALUES
+(1, '12A', 5500, 'Economy', 1, 1);
+INSERT INTO TICKET VALUES
+(2, '14C', 4800, 'Economy', 2, 2);
+INSERT INTO TICKET VALUES
+(3, '14D', 4800, 'Economy', 2, 2);
+INSERT INTO TICKET VALUES
+(4, '2F', 6200, 'Business', 3, 3);
+INSERT INTO TICKET VALUES
+(5, '3B', 3100, 'Economy', 4, 4);
+INSERT INTO TICKET VALUES
+(6, '21A', 4500, 'Economy', 5, 5);
+
+COMMIT;
